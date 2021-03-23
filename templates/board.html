@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="game">
+
+    <div class="container-fluid my-3">
+        <div class="row justify-content-center">
+            <div class="timer col-lg-3">
+                <p>Time:</p>
+                <p id="timer"></p>
+            </div>
+            <div class="score col-lg-3">
+                <p>Score:</p>
+                <p id="score">0</p>
+            </div>
+            <div id="message" class="message col-lg-5">
+                <p>Look for a word on the board!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid board">
+        <div class="row ">
+            <div class="col-3 pt-2">
+                <table class="table table-striped">
+                    <thead class="table-dark"">
+                        <tr>
+                            <th>#</th>
+                            <th>words</th>
+                            <th>points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="words">
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="col-lg-8">
+                {% for row in board %}
+                <div class="row justify-content-end">
+                    {% for square in row %}
+                    <div class="col-2 square">{{ square }}</div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+
+
+                <div class="row justify-content-end">
+                    <div class="word-form col-lg-11">
+                        <form id="boggle-form">
+                            <div class="mb-3">
+                                <label class="form-label" for="guess">Guess a Word</label>
+                                <input id="word-guessed" class="form-control" type="text" name="guess">
+                            </div>
+                            <button id="submit-guess" class="btn btn-primary" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+{% endblock %}

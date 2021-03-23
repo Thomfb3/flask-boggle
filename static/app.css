@@ -1,0 +1,146 @@
+nav {
+    background-color: #bccdde; 
+
+    padding: 10px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+.details {
+    position: absolute;
+    left: 0px;
+    padding-left: 10px;
+}
+
+.highscore {
+    color: #00245b;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+.games-played {
+    color: #316fad;
+}
+
+footer {
+    background-color: #212529;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+#game {
+
+    margin: none;
+}
+
+.timer {
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #0e6efd;
+    background-color: #e6e6e6;
+
+}
+
+.score {
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #fd950e;
+    background-color: #e6e6e6;
+}
+
+.square {
+    color: #fff;
+    background-color: #0e6efd;
+    box-shadow: 0px 5px #09459c;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    margin: 7px;
+    transition: all .2s ease-in-out;
+}
+
+
+.word-form {
+    background-color: #f7f7f7;
+    padding: 25px;
+    margin-top: 30px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+}
+
+.good {
+    color: #0e6efd;
+}
+
+.bad {
+    color:#cc8484;
+    text-decoration: line-through;
+}
+
+#message {
+    height: 100px;
+}
+
+
+
+
+.timer, .score, .message {
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    color: #222;
+}
+.timer p, .score p, .message p {
+    margin-bottom: 0px;
+}
+
+
+#score {
+    color: #fd950e;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+#timer {
+    color: #0e6efd;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.message {
+    background-color: #f7f7f7;
+    border: 1px solid #ced4da;
+    color: #0e6efd;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.good-msg {
+    color: #04743c;
+    background-color: #bcf7da;
+    border: 2px solid #04743c;
+}
+
+.bad-msg {
+    color: #ca1212;
+    background-color: #ffd6d6;
+    border: 2px solid #ca1212;
+}
